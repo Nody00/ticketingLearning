@@ -45,12 +45,13 @@ spec:
                 name: client-srv
                 port:
                   number: 3000
+---
 apiVersion: v1
 kind: Service
 metadata:
   annotations:
-    service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: 'false'
-    service.beta.kubernetes.io/do-loadbalancer-hostname: 'www.nody-test-ticketing.icu'
+    service.beta.kubernetes.io/do-loadbalancer-enable-proxy-protocol: "false"
+    service.beta.kubernetes.io/do-loadbalancer-hostname: "www.nody-test-ticketing.icu"
   labels:
     helm.sh/chart: ingress-nginx-2.0.3
     app.kubernetes.io/name: ingress-nginx
